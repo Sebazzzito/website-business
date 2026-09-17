@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brisa Café — Aroma, calma y comunidad</title>
+  <meta name="description" content="Brisa Café: café de origen tostado con calma, en el corazón de la ciudad.">
+
+  <!-- Tipografías: Fraunces (titulares con carácter) + Work Sans (texto, muy legible) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="#inicio" class="navbar__brand">Brisa Café</a>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navbar__menu" id="navMenu">
+        <a href="#inicio">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto" class="navbar__cta">Contáctanos</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero__text">
+      <p class="hero__eyebrow">Tostado en pequeños lotes</p>
+      <h1 class="hero__title">Un respiro de<br>aroma en cada taza.</h1>
+      <p class="hero__desc">
+        Granos de origen, tostados con calma y servidos con cariño.
+        Brisa Café es ese momento del día que reservas para ti,
+        entre el ruido de la ciudad y el primer sorbo de la mañana.
+      </p>
+      <div class="hero__actions">
+        <a href="#menu" class="btn btn--primary">Ver el menú</a>
+        <a href="#nosotros" class="btn btn--ghost">Conócenos</a>
+      </div>
+    </div>
+
+    <div class="hero__art" aria-hidden="true">
+      <svg viewBox="0 0 320 320" class="hero__cup">
+        <ellipse cx="160" cy="270" rx="90" ry="14" class="cup-shadow"/>
+        <path d="M75 120 h150 l-14 120 a20 20 0 0 1-20 18 h-92 a20 20 0 0 1-20-18 Z" class="cup-body"/>
+        <path d="M225 140 h20 a28 28 0 0 1 0 56 h-14" class="cup-handle"/>
+        <path d="M85 120 h150" class="cup-rim"/>
+        <path class="steam steam--1" d="M120 100 C 110 85, 130 75, 120 60"/>
+        <path class="steam steam--2" d="M160 100 C 150 82, 170 70, 160 50"/>
+        <path class="steam steam--3" d="M200 100 C 190 85, 210 75, 200 60"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===== MENÚ ===== -->
+  <section class="menu" id="menu">
+    <div class="section__head">
+      <h2>Nuestro menú</h2>
+      <p>Cada taza se prepara al momento, con leche entera o alternativas vegetales sin costo extra.</p>
+    </div>
+
+    <div class="menu__grid">
+      <div class="menu__item">
+        <div class="menu__row">
+          <h3>Espresso</h3>
+          <span class="menu__price">$2.00</span>
+        </div>
+        <p>Doble shot, cuerpo intenso y crema dorada.</p>
+      </div>
+
+      <div class="menu__item">
+        <div class="menu__row">
+          <h3>Americano</h3>
+          <span class="menu__price">$2.50</span>
+        </div>
+        <p>Espresso alargado con agua caliente, suave y limpio.</p>
+      </div>
+
+      <div class="menu__item">
+        <div class="menu__row">
+          <h3>Café con leche</h3>
+          <span class="menu__price">$2.75</span>
+        </div>
+        <p>Mitad espresso, mitad leche vaporizada.</p>
+      </div>
+
+      <div class="menu__item">
+        <div class="menu__row">
+          <h3>Cappuccino</h3>
+          <span class="menu__price">$3.00</span>
+        </div>
+        <p>Espuma densa y aterciopelada, canela al gusto.</p>
+      </div>
+
+      <div class="menu__item">
+        <div class="menu__row">
+          <h3>Cold brew</h3>
+          <span class="menu__price">$3.25</span>
+        </div>
+        <p>Infusión en frío por 18 horas, dulzor natural.</p>
+      </div>
+
+      <div class="menu__item">
+        <div class="menu__row">
+          <h3>Latte de vainilla</h3>
+          <span class="menu__price">$3.50</span>
+        </div>
+        <p>Espresso, leche cremosa y vainilla natural.</p>
+      </div>
+
+      <div class="menu__item">
+        <div class="menu__row">
+          <h3>Mocha</h3>
+          <span class="menu__price">$3.75</span>
+        </div>
+        <p>Espresso, chocolate semiamargo y leche.</p>
+      </div>
+
+      <div class="menu__item">
+        <div class="menu__row">
+          <h3>Té chai</h3>
+          <span class="menu__price">$3.00</span>
+        </div>
+        <p>Especias cálidas con leche vaporizada.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE NOSOTROS ===== -->
+  <section class="about" id="nosotros">
+    <div class="about__art">
+      <img src="https://picsum.photos/seed/brisa-interior/600/750" alt="Interior de Brisa Café" loading="lazy">
+    </div>
+    <div class="about__text">
+      <h2>Sobre nosotros</h2>
+      <p>
+        Brisa Café nació de una idea sencilla: el café debería tomarse
+        con tiempo, no de paso. Empezamos en un local pequeño, tostando
+        granos de fincas cercanas en lotes cortos para no perder el
+        carácter de cada cosecha.
+      </p>
+      <p>
+        Hoy seguimos haciendo lo mismo: elegir bien el origen, tostar
+        con paciencia y recibir a cada persona como si fuera parte
+        de la casa.
+      </p>
+      <ul class="about__list">
+        <li>Granos de origen único, tostados semanalmente</li>
+        <li>Leches vegetales disponibles sin costo extra</li>
+        <li>Repostería horneada cada mañana</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== GALERÍA ===== -->
+  <section class="gallery" id="galeria">
+    <div class="section__head">
+      <h2>Galería</h2>
+      <p>Un vistazo al espacio. Reemplaza estos bloques por tus propias fotos.</p>
+    </div>
+
+    <div class="gallery__grid">
+      <figure class="gallery__item gallery__item--1">
+        <img src="https://picsum.photos/seed/brisa-barra/600/600" alt="La barra de Brisa Café" loading="lazy">
+        <figcaption>La barra</figcaption>
+      </figure>
+      <figure class="gallery__item gallery__item--2">
+        <img src="https://picsum.photos/seed/brisa-lectura/600/600" alt="Rincón de lectura" loading="lazy">
+        <figcaption>Rincón de lectura</figcaption>
+      </figure>
+      <figure class="gallery__item gallery__item--3">
+        <img src="https://picsum.photos/seed/brisa-tueste/600/600" alt="Tueste en curso" loading="lazy">
+        <figcaption>Tueste en curso</figcaption>
+      </figure>
+      <figure class="gallery__item gallery__item--4">
+        <img src="https://picsum.photos/seed/brisa-postres/600/600" alt="Repostería del día" loading="lazy">
+        <figcaption>Repostería del día</figcaption>
+      </figure>
+      <figure class="gallery__item gallery__item--5">
+        <img src="https://picsum.photos/seed/brisa-terraza/600/600" alt="Terraza" loading="lazy">
+        <figcaption>Terraza</figcaption>
+      </figure>
+      <figure class="gallery__item gallery__item--6">
+        <img src="https://picsum.photos/seed/brisa-latte/600/600" alt="Latte art" loading="lazy">
+        <figcaption>Latte art</figcaption>
+      </figure>
+    </div>
+    <p class="gallery__note">Fotos de muestra (picsum.photos) — reemplázalas por las tuyas cuando quieras.</p>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="contact" id="contacto">
+    <div class="contact__info">
+      <h2>Contáctanos</h2>
+      <p>Escríbenos o pasa a visitarnos. Estamos abiertos todos los días.</p>
+
+      <dl class="contact__details">
+        <div>
+          <dt>Dirección</dt>
+          <dd>Calle 5ta, San Miguelito, Panamá</dd>
+        </div>
+        <div>
+          <dt>Horario</dt>
+          <dd>Lunes a domingo, 7:00 am – 7:00 pm</dd>
+        </div>
+        <div>
+          <dt>Teléfono</dt>
+          <dd>+507 000-0000</dd>
+        </div>
+        <div>
+          <dt>Correo</dt>
+          <dd>hola@brisacafe.example</dd>
+        </div>
+      </dl>
+    </div>
+
+    <form class="contact__form" id="contactForm" novalidate>
+      <div class="form__field">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form__field">
+        <label for="email">Correo</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form__field">
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary">Enviar mensaje</button>
+      <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__brand">Brisa Café</span>
+      <p>Un respiro de aroma, todos los días.</p>
+      <nav class="footer__links">
+        <a href="#inicio">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <p class="footer__copy">&copy; <span id="year"></span> Brisa Café. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
